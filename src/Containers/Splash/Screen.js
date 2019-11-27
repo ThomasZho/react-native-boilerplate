@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 import { Text, View } from 'react-native'
 import styles from './Styles'
 import { Helpers } from 'src/Theme'
 
-export default class SplashScreen extends React.Component {
+export default class SplashScreen extends PureComponent {
   render() {
     return (
       <View style={[Helpers.fillRowCenter, styles.container]}>

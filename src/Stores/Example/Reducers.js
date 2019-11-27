@@ -1,13 +1,20 @@
+import { createReducer } from 'reduxsauce'
+import { ExampleTypes } from './Actions'
+
+/**
+ * The initial values for the redux state.
+ */
+export const INITIAL_STATE = {
+  user: {},
+  userIsLoading: false,
+  userErrorMessage: null,
+}
+
 /**
  * Reducers specify how the application's state changes in response to actions sent to the store.
  *
  * @see https://redux.js.org/basics/reducers
  */
-
-import { INITIAL_STATE } from './InitialState'
-import { createReducer } from 'reduxsauce'
-import { ExampleTypes } from './Actions'
-
 export const fetchUserLoading = (state) => ({
   ...state,
   userIsLoading: true,

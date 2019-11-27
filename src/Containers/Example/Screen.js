@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 import { Platform, Text, View, Button, ActivityIndicator, Image } from 'react-native'
 import { connect } from 'react-redux'
 import ExampleActions from 'src/Stores/Example/Actions'
@@ -19,7 +19,7 @@ const instructions = Platform.select({
   android: 'Double tap R on your keyboard to reload,\nShake or press menu button for dev menu.',
 })
 
-class ExampleScreen extends React.Component {
+class ExampleScreen extends PureComponent {
   componentDidMount() {
     this._fetchUser()
   }

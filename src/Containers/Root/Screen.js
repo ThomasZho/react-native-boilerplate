@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import NavigationService from 'src/Services/NavigationService'
 import AppNavigator from 'src/Navigators/AppNavigator'
 import { View } from 'react-native'
@@ -7,7 +7,7 @@ import StartupActions from 'src/Stores/Startup/Actions'
 import PropTypes from 'prop-types'
 import { Helpers } from 'src/Theme'
 
-class RootScreen extends Component {
+class RootScreen extends PureComponent {
   componentDidMount() {
     // Run the startup saga when the application is starting
     this.props.startup()
