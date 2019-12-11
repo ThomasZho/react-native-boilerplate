@@ -48,10 +48,6 @@ export default StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
   },
-  fillCol: {
-    flex: 1,
-    flexDirection: 'column',
-  },
   fillColCenter: {
     alignItems: 'center',
     flex: 1,
